@@ -1,0 +1,114 @@
+root(1990).
+entry(1990, 1991).
+accession(1991, 1992, 'A00145').
+version(1991, 1994, '1').
+entryversion(1991, 1996, '3').
+dataclass(1991, 1998, 'PAT').
+taxonomicdivision(1991, 2000, 'PRI').
+moleculetype(1991, 2002, 'unassigned RNA').
+sequencelength(1991, 2004, '678').
+topology(1991, 2006, 'linear').
+firstpublic(1991, 2008, '1993-03-22').
+firstpublicrelease(1991, 2010, '35').
+lastupdated(1991, 2012, '2005-04-14').
+lastupdatedrelease(1991, 2014, '83').
+description(1991, 2016, 'B.taurus BoIFN-alpha A mRNA').
+keyword(1991, 2018, 'interferon alpha').
+reference(1991, 2020).
+type(2020, 2021, 'patent').
+number(2020, 2023, '1').
+location(2020, 2025, '1-678').
+referencelocation(2020, 2027, '
+Patent number GB2157697-A/1, 30-OCT-1985.		').
+xref(1991, 2029).
+db(2029, 2030, 'MD5').
+id(2029, 2032, '36b21ec05d6bd3bbaab87dd246820e87').
+xref(1991, 2034).
+db(2034, 2035, 'EuropePMC').
+id(2034, 2037, 'PMC165239').
+secondaryid(2034, 2039, '12857912').
+featur(1991, 2041).
+name(2041, 2042, 'source').
+location(2041, 2044, '1..678').
+taxon(2041, 2046).
+scientificname(2046, 2047, 'Bos taurus').
+commonname(2046, 2049, 'cattle').
+taxid(2046, 2051, '9913').
+lineage(2046, 2053).
+taxon(2053, 2054).
+scientificname(2054, 2055, 'Eukaryota').
+taxon(2053, 2057).
+scientificname(2057, 2058, 'Metazoa').
+taxon(2053, 2060).
+scientificname(2060, 2061, 'Chordata').
+taxon(2053, 2063).
+scientificname(2063, 2064, 'Craniata').
+taxon(2053, 2066).
+scientificname(2066, 2067, 'Vertebrata').
+taxon(2053, 2069).
+scientificname(2069, 2070, 'Euteleostomi').
+taxon(2053, 2072).
+scientificname(2072, 2073, 'Mammalia').
+taxon(2053, 2075).
+scientificname(2075, 2076, 'Eutheria').
+taxon(2053, 2078).
+scientificname(2078, 2079, 'Laurasiatheria').
+taxon(2053, 2081).
+scientificname(2081, 2082, 'Cetartiodactyla').
+taxon(2053, 2084).
+scientificname(2084, 2085, 'Ruminantia').
+taxon(2053, 2087).
+scientificname(2087, 2088, 'Pecora').
+taxon(2053, 2090).
+scientificname(2090, 2091, 'Bovidae').
+taxon(2053, 2093).
+scientificname(2093, 2094, 'Bovinae').
+taxon(2053, 2096).
+scientificname(2096, 2097, 'Bos').
+qualifier(2041, 2099).
+name(2099, 2100, 'organism').
+value(2099, 2102, 'Bos taurus').
+featur(1991, 2104).
+name(2104, 2105, 'CDS').
+location(2104, 2107, '85..654').
+qualifier(2104, 2109).
+name(2109, 2110, 'gene').
+value(2109, 2112, '
+IFN-alpha A
+			').
+qualifier(2104, 2114).
+name(2114, 2115, 'product').
+value(2114, 2117, '
+interferon-alpha A
+			').
+qualifier(2104, 2119).
+name(2119, 2120, 'protein_id').
+value(2119, 2122, '
+CAA00016.1
+			').
+qualifier(2104, 2124).
+name(2124, 2125, 'translation').
+value(2124, 2127, '
+MAPAWSFLLSLLLLSCNAICSLGCHLPHTHSLANRRVLMLLQQLRRVSPSSCLQDRNDFEFLQEALGGSQLQKAQAISVL
+HEVTQHTFQLFSTEGSPATWDKSLLDKLRAALDQQLTDLQACLTQEEGLRGAPLLKEDSSLAVRKYFHRLTLYLQEKRHS').
+value(2124, 2127, '
+PCAWEVVRAEVMRAFSSSTNLQESFRRKD
+			').
+sequence(1991, 2130, '
+ctgaaggaaggtcttcagagaacctagagagcaggttcacagagtcacccacctcaccag
+gccaaagcatctgcaaggtccccgatggccccagcctggtccttcctgctatccctgttg').
+sequence(1991, 2130, '
+ctgctcagctgcaacgccatctgctctctgggttgccacctgcctcacacccacagcctg
+gccaacaggagggtcctgatgctcctgcaacaactgagaagggtctccccttcctcctgc').
+sequence(1991, 2130, '
+ctgcaggacagaaatgacttcgaattcctccaggaggctctgggtggcagccagttgcag
+aaggctcaagccatctctgtgctccacgaggtgacccagcacaccttccagctcttcagc').
+sequence(1991, 2130, '
+acagagggctcgcccgccacgtgggacaagagcctcctggacaagctacgcgctgcgctg
+gatcagcagctcactgacctgcaagcctgtctgacgcaggaggaggggctgcgaggggct').
+sequence(1991, 2130, '
+cccctgctcaaggaggactccagcctggctgtgaggaaatacttccacagactcactctc
+tatctgcaagagaagagacacagcccttgtgcctgggaggttgtcagagcagaagtcatg').
+sequence(1991, 2130, '
+agagccttctcttcctcaacaaacttgcaggagagtttcaggagaaaggactgacacaca
+cctggtccaacacggaaa').
