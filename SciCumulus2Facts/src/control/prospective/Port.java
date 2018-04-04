@@ -10,7 +10,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import model.Prov;
 import model.ProvOne;
-import model.WfMS;
 
 /**
  *
@@ -33,7 +32,9 @@ public class Port {
                         portId = "pin" + rs.getString("relid");    
                         break;
                     case "INTERMEDIARY":
-                        portId = "pint" + rs.getString("relid");    
+                        portId = "pin" + rs.getString("relid"); 
+                        generateFact(output);
+                        portId = "pout" + rs.getString("relid"); 
                         break;
                     case "OUTPUT":
                         portId = "pout" + rs.getString("relid");    

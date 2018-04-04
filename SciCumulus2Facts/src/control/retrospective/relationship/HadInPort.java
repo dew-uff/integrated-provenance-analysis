@@ -31,17 +31,7 @@ public class HadInPort {
                                 
             while(rs.next()){                  
                 execution = "ex" + rs.getString("taskid");
-                switch (rs.getString("rtype")){
-                    case "INPUT":
-                        portId = "pin" + rs.getString("relid");    
-                        break;
-                    case "INTERMEDIARY":
-                        portId = "pint" + rs.getString("relid");    
-                        break;
-                    case "OUTPUT":
-                        portId = "pout" + rs.getString("relid");    
-                        break;                        
-                }               
+                portId = "pin" + rs.getString("relid");                 
                 generateFact(output);                
             }
             rs.close();

@@ -15,19 +15,24 @@ import model.Prov;
  * @author nwm26
  */
 public class WasAssociatedWith {
-    final String sql = "SELECT ea.taskid, m.machineid \n " +
-                       "FROM eactivation ea, emachine m\n " +
-                       "WHERE ea.machineid = m.machineid";
-    String output, machineid, eactid;     
+
+    String output, user, eworkflow;     
     
     public WasAssociatedWith(StringBuffer output){
+        final String sql =  "SELECT m.machineid, ew.ewkfid " +
+                            "FROM eactivation ea, emachine m, eactivity a, eworkflow ew\n" +
+                            "WHERE ea.machineid = m.machineid\n" +
+                            "and ea.actid = a.actid\n" +
+                            "and a.wkfid = ew.ewkfid\n" +
+                            "group by m.machineid, ew.ewkfid"; 
+        
         QueryDB queryDAO = new QueryDB();
         ResultSet rs = queryDAO.getTable(sql);
         
         try {                                   
             while(rs.next()){                  
-                eactid = "ex" + rs.getString("taskid");                
-                machineid = "u" + rs.getString("machineid");                
+                eworkflow = "ew" + rs.getInt("ewkfid");                
+                user = "u" + rs.getInt("machineid");                
                 generateFact(output);
             }
             rs.close();
@@ -38,10 +43,10 @@ public class WasAssociatedWith {
     public void generateFact(StringBuffer output){ 
         output.append(Prov.WASASSOCIATEDWITH);
         output.append("("); 
-        output.append(eactid);
+        output.append(eworkflow);
         output.append("s");
         output.append(",");
-        output.append(machineid);
+        output.append(user);
         output.append("s");
         output.append(").\n");         
     }

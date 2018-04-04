@@ -40,12 +40,15 @@ public class FactGeneration {
      * @throws java.lang.ClassNotFoundException
      * @throws java.sql.SQLException
      */
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+    
+    /*public static void main(String[] args) throws ClassNotFoundException, SQLException {
         StringBuffer output;
-        FileWriter writer;
+        FileWriter writer;        
+        String database2 = "skills";
   
         output = new StringBuffer();
-        output.append("\ndataSet(2,'SciCumulus').\n");
+        //Código do dataset/grafo diferente para cada SGWf
+        output.append("\ndataSet(1,'SciCumulus').\n");
         
         //Prospective entities
         new Workflow(output);       
@@ -58,7 +61,7 @@ public class FactGeneration {
         new HasInPort(output);
 
         //Prospective and Retrospective entities
-        new Data(output);
+        new Data(output, database2);
         //new Document(output);
 
         //Retrospective Entities
@@ -66,27 +69,26 @@ public class FactGeneration {
         new Execution(output);
         
         //Retrospective relationships
-        new WasGeneratedBy(output);
-        new Used(output);                 
+        new WasGeneratedBy(output, database2);
+        new Used(output, database2);                 
         new WasPartOf(output); 
         new WasAssociatedWith(output);
         new WasInformedBy(output);
         new WasDerivedFrom(output);
         new HadPlan(output);
         new HadInPort(output);
-        new HadOutPort(output);
-                        
+        new HadOutPort(output);                        
         new User(output);
         
         try {
             FileManager fileManager = new FileManager();
-            writer = fileManager.getWriter("C:\\Dropbox\\facts.pl", true); //path, append (true) or new file (false)  
+            writer = fileManager.getWriter("C:\\Users\\Wellington\\Drive\\PhD\\Thesis\\ExperimentalEvaluation\\Facts.pl", false); //path, append (true) or new file (false)              
             writer.write(output.substring(0, output.length()-1));
             writer.close();  
         } catch(IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
     
 
 }

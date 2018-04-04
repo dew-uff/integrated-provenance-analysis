@@ -56,12 +56,12 @@ public class User {
             output.append(label);
             output.append("')");                           
             output.append("]).\n");
-            output.append("entity(d1s,[prop(prov:type,['provone:data']),prop(prov:label,'name'),prop(prov:type,'text'),prop(prov:value,'i3')]).");
-            output.append("hasDefaultParam(pint2s,d1s).\n");
-            output.append("used(ex51556,d97).");
-            output.append("entity(pout91,[prop(prov:type,['provone:port']),prop(prov:label,'defined')]).");
-            output.append("hasOutPort(pg9,d91).");
-            output.append("hadOutPort(ex51556,d91).");
+            //output.append("entity(d1s,[prop(prov:type,['provone:data']),prop(prov:label,'name'),prop(prov:type,'text'),prop(prov:value,'i3')]).");
+            //output.append("hasDefaultParam(pint2s,d1s).\n");
+            //output.append("used(ex51556,d97).");
+            //output.append("entity(pout91,[prop(prov:type,['provone:port']),prop(prov:label,'defined')]).");
+            //output.append("hasOutPort(pg9,d91).");
+            //output.append("hadOutPort(ex51556,d91).");
             
     /* output =         "member(X,[X|_]).\n" +
                              "member(X,[_|T]) :- member(X|T).\n" +

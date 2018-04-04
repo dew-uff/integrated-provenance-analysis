@@ -74,9 +74,10 @@ public class WExecution {
             output.append("')");                           
             output.append("]).\n"); 
             
-            output.append("hadSystem(");
+            output.append("hadDataSet(");
             output.append(taskid);
-            output.append(", 2).\n");                
+            output.append("s");
+            output.append(", 1).\n");                
     }
 }
 

@@ -10,7 +10,11 @@ package utils;
  * @author nwm26
  */
 public class Sequence {
-    static int sequence = 0;    
+    static int sequence = 1;  
+    
+    public static void setSequence(int value){
+        sequence = value;
+    }
     
     public static int getSequence(){
         return sequence++;

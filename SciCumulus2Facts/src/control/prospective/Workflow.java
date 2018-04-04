@@ -59,6 +59,6 @@ public class Workflow {
         output.append("hasDataSet(");
         output.append(wkfId);
         output.append("s");
-        output.append(", 2).\n");         
+        output.append(", 1).\n");         
     }    
 }

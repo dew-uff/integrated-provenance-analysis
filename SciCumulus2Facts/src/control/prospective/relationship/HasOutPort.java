@@ -30,17 +30,7 @@ public class HasOutPort {
         try {                                   
             while(rs.next()){  
                 actid = "pg" + rs.getString("actid");
-                switch (rs.getString("rtype")){
-                    case "INPUT":
-                        portId = "pin" + rs.getString("relid");    
-                        break;
-                    case "INTERMEDIARY":
-                        portId = "pint" + rs.getString("relid");    
-                        break;
-                    case "OUTPUT":
-                        portId = "pout" + rs.getString("relid");    
-                        break;
-                }    
+                portId = "pout" + rs.getString("relid");       
                 generateFact(output);                  
             }
             rs.close();

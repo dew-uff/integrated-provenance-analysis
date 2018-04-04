@@ -23,4 +23,5 @@ public final class ProvOne {
     public static final String HADPLAN = "hadPlan";  
     public static final String HADINPORT = "hadInPort";  
     public static final String HADOUTPORT = "hadOutPort";          
+    public static final String HASDEFAULTPARAM = "hasDefaultParam"; 
 }

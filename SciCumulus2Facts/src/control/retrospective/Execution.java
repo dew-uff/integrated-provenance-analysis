@@ -20,7 +20,7 @@ import model.WfMS;
  */
 //Execution: identifier, title, startTime, endTime, cached, completed 
 public class Execution {
-    final String sql = "Select eac.taskid, ea.tag, eac.computingstarttime, eac.computingendtime, eac.status " +
+    final String sql = "Select eac.taskid, ea.tag, eac.starttime, eac.endtime, eac.status " +
                        "from eactivity ea, eactivation eac, eworkflow ew \n " +
                        "where ea.actid = eac.actid and ea.wkfid = ew.ewkfid \n " +
                        "order by eac.taskid";
@@ -39,8 +39,8 @@ public class Execution {
         try {       
             while(rs.next()){ 
                 //2015-11-13 15:52:53.322+00 2015-11-13 15:52:53
-                startTime = rs.getString("computingstarttime");
-                endTime = rs.getString("computingendtime");
+                startTime = rs.getString("starttime");
+                endTime = rs.getString("endtime");
                 //if(startTime != null)                
                 //    start = new SimpleDateFormat("yyyy-MM-d HH:mm:ss").parse(startTime.substring(0,19));
                // if(endTime != null)
